@@ -5,10 +5,10 @@ export default function ArticleList(props) {
     return (
         <>
           <main>
-            [
-                posts.map((post) <Article key={posts.id} post={post}/>)
-            ]
+            {posts.map((post) => {
+                return <Article key={post.id} post={post} />
+            })}
           </main>
         </>
-    )
+    );
 }
